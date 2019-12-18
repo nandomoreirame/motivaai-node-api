@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "name": "motivaai-node-api",
+  "builds": [{ "src": "index.js", "use": "@now/node-server" }],
+  "alias": ["api-motivaai.nandomoreira.dev"],
+  "routes": [
+    { "src": "/", "dest": "/index.js", "methods": ["GET"] },
+    { "src": "/v1", "dest": "/index.js", "methods": ["GET"] },
+    { "src": "/v1/phrase", "dest": "/index.js", "methods": ["GET"] },
+    { "src": "/v1/phrases", "dest": "/index.js", "methods": ["GET"] },
+    { "src": "/v1/phrases/(?<id>[^/]*)", "dest": "/index.js", "methods": ["GET"] },
+    { "src": "/v1/phrase/(?<id>[^/]*)", "dest": "/index.js", "methods": ["GET"] }
+  ]
+}

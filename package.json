@@ -1,0 +1,25 @@
+{
+  "name": "motivaai-node-api",
+  "version": "1.0.0",
+  "description": "MotivaAi Node.js with express and now.js",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "deploy": "now",
+    "release": "now --prod",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "engines": {
+    "node": ">=10"
+  },
+  "author": "Fernando Moreira <nandomoreira.me@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "eslint": "^6.7.2",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.19.1"
+  }
+}
